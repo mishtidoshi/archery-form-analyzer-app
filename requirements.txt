@@ -1,0 +1,14 @@
+ultralytics==8.4.31
+opencv-python==4.13.0.92
+numpy==2.4.2
+matplotlib==3.10.0
+scipy==1.17.1
+scikit-learn==1.8.0
+statsmodels==0.14.6
+
+# Optional — only for the legacy `--pose-backend mediapipe` fallback.
+# YOLO26 is the default backend and needs none of this. Pinned to 0.10.9 for the
+# legacy `mp.solutions` API, which has no Python-3.13 wheel — leave commented so
+# `pip install -r requirements.txt` works on Python 3.13+. Uncomment on Python
+# <=3.12 if you need the mediapipe backend.
+# mediapipe==0.10.9

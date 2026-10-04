@@ -1,0 +1,38 @@
+# Data folders: keep the directory structure, ignore contents
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+dropbox/*
+!dropbox/.gitkeep
+session_history/**
+!session_history/**/
+!session_history/**/.gitkeep
+archers/*
+!archers/README.md
+
+# Model weights
+models/*
+!models/README.md
+
+# Media
+*.mp4
+*.mov
+*.avi
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+dist/
+
+# Env / secrets
+.env
+.env.*
+
+# OS
+.DS_Store
