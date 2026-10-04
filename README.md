@@ -13,8 +13,7 @@ elevation, hold time, follow-through, and head stability for every single shot.
 ## What it does
 
 1. **Automatic shot detection.** Combines clicker audio onset detection with visual
-   full-draw pose confirmation, so a real shot needs both signals to agree — one
-   sensor's blind spot is covered by the other's strength.
+   full-draw pose confirmation, so a real shot needs both signals to agree.
 2. **Biomechanical metrics across up to 3 camera views.** Face (draw/bow elbow angles,
    anchor position, nose-string gap, bow shoulder elevation), back (shoulder level,
    hip alignment, head tilt), target (draw elbow height, lateral drift, back tension
@@ -25,20 +24,12 @@ elevation, hold time, follow-through, and head stability for every single shot.
    it's improving.
 4. **Per-archer calibration.** Instead of judging your form against someone else's
    absolute numbers, the system can calibrate to your own baseline and flag deviation
-   from *your* normal — a much more actionable signal for an individual archer.
+   from *your* normal.
 5. **Coaching notes integration.** Log your coach's cues in the app; generated
    feedback can echo the language your coach already uses, without ever having to
    re-type your session data into a spreadsheet.
 6. **A mobile web app** for the whole loop: sign up as an archer, upload video from
-   your phone, watch it auto-analyze, browse sessions/trends, and log coaching notes —
-   no command line required for day-to-day use.
-
-> **This is not a medical or injury-prevention tool.** It measures joint angles and
-> timing from video. It cannot diagnose, predict, or prevent injury. Several metrics
-> correspond to loading patterns the sports-medicine literature associates with
-> overuse, but a correspondence is not a risk assessment. Pain, or any suspected
-> injury, goes to a physiotherapist or physician, not to this pipeline.
-
+   your phone, watch it auto-analyze, browse sessions/trends, and log coaching notes.
 ---
 
 ## Install
@@ -165,9 +156,9 @@ For a production build where FastAPI serves the built frontend directly, see
 
 ## Why this project
 
-Olympic recurve archery is one of the most technically demanding sports — small,
+Olympic recurve archery is one of the most technically demanding sports, with small,
 consistent form deviations directly affect arrow scores, but they're hard for a coach
 to catch by eye across hundreds of arrows in a session, and impossible to track
 numerically without instrumentation. This tool turns ordinary phone video into
 per-shot, per-metric measurements, so an archer can see exactly what changed between
-a good session and a bad one, and validate whether a coaching cue actually stuck.
+a good session and a bad one and validate coaching cues.
